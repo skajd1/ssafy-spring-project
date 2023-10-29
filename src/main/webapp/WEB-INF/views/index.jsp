@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
-	pageEncoding="utf-8" import="java.util.ArrayList, com.mvc.vo.Board"%>
+	pageEncoding="utf-8" import="java.util.ArrayList, com.mvc.vo.User"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>	
 <html>
 <head>
@@ -24,9 +24,10 @@
 		<h1>유저</h1>
 		<img src = "resources/images/f1.jpg"/>
 		<jsp:include page="loginCheck.jsp"/>
+		<jsp:include page="adminCheck.jsp"/>
 		</br>
-		<a href="userlist">유저리스트</a>
-		<a href="regist">유저등록</a>
+		<a href="list">유저리스트</a>
+		<a href="insert">유저등록</a>
 		<br>
 	</div>
 </body>

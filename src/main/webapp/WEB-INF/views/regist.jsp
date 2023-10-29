@@ -18,7 +18,7 @@
 </style>
 </head>
 <body>
-	<%@ include file="include/header.jsp"%>
+	<%-- <%@ include file="include/header.jsp"%> --%>
 	<h1>SSAFY 사용자 관리</h1>
 	<form method="post" action="regist" enctype="multipart/form-data">
 		<fieldset>

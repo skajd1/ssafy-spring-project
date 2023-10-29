@@ -5,15 +5,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
 </head>
 <body>
-	<c:if test="${empty u}">
-		<a href="login">로그인</a>
-	</c:if>
-	<c:if test="${!empty u}">
-		${u.id }님, 환영합니다!
-		<a href="logout">로그아웃</a>
+	<c:if test="${admin eq 1}">
+		<a href="admin">관리자메뉴</a>
 	</c:if>
 </body>
 </html>

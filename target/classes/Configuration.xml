@@ -24,8 +24,7 @@
 
     <!-- 3. mapper file -->
     <mappers>
-    	<mapper resource="res/Customer.xml"/>
-    	<mapper resource="res/Emp.xml"/>
+    	<mapper resource="res/User.xml"/>
     	
     </mappers>
 

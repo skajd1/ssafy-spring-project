@@ -30,7 +30,7 @@ td:nth-child(3) {
 </style>
 </head>
 <body>
-<%@ include file="include/header.jsp"%>
+<%-- <%@ include file="include/header.jsp"%> --%>
 	<h1>사용자 등록 결과</h1>
 	<h2>등록 사용자 정보</h2>
 	<table>

@@ -1,16 +1,10 @@
 package com.mvc.vo;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
 
-@Getter
-@Setter
 @AllArgsConstructor
-@NoArgsConstructor
-@ToString
+@Data
 public class User {
 	private String id;
 	private String pw;

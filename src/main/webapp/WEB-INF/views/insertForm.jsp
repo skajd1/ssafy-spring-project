@@ -17,30 +17,22 @@
 <BODY>
 	<div class="container text-center">
 		
-		<h1>새글쓰기</h1>
+		<h1>회원가입</h1>
 		<img src = "resources/images/f3.jpg"/>
 		<form action="insertProcess" method="post">
 			<div class="form-group text-left">
-				<label for="title">제 목:</label> 
-				<input type="text"	class="form-control" name="title">
+				<label for="id">아이디</label> 
+				<input type="text"	class="form-control" name="id">
 			</div>
 
 			<div class="form-group text-left">
-				<label for="pw">패스워드:</label> 
-				<input type="password"	class="form-control" name="pass">
-			</div>
-			<div class="form-group text-left">
-				<label for="name">이 름:</label> 
-				<input type="text"	class="form-control" name="name">
-			</div>
-			<div class="form-group text-left">
-				<label for="comment">내 용:</label>
-				<textarea class="form-control" rows="5" id="comment" name="content"></textarea>
+				<label for="pw">비번</label> 
+				<input type="password"	class="form-control" name="pw">
 			</div>
 
 			<button type="submit" class="btn btn-primary">Submit</button>
 		</form>
-		<a href="list">전체화면</a>
+		<a href="list">목록보기</a>
 	</div>
 
 </BODY>

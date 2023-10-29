@@ -21,33 +21,13 @@
 <body>
 	<div class="container text-center">
 		
-		<h1>유저목록</h1>
+		<h1>관리자페이지</h1>
 		<img src = "resources/images/f1.jpg"/>
-		<br/>
 		<jsp:include page="loginCheck.jsp"/>
 		<jsp:include page="adminCheck.jsp"/>
-		
-		<div id="result"></div>
-		
-		<table class="table table-striped">
-			<thead>
-				<tr>
-					<th>아이디</th>
-					<th>선택</th>
-				</tr>
-			</thead>
-			<tbody>
-				<c:forEach items="${list}" var="u">
-					<tr>
-						<td><a href="list/${u.id}">${u.id }</a></td>
-						<td><input type = "checkbox" value = "${u.id }"></td>
-					</tr>				
-				</c:forEach>				
-			</tbody>
-		</table>
-		<br>
-		<a href="insert">회원 등록</a>
-		<a href="delete2"> 선택 삭제</a>
+		</br>
+		<a href="list">유저리스트</a>
+		<a href="insert">유저등록</a>
 		<br>
 	</div>
 </body>

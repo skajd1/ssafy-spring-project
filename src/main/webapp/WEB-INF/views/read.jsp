@@ -18,43 +18,25 @@
 <body>
 	<div class="container text-center">
 	
-		<h1>글읽기</h1>	
+		<h1>회원정보</h1>	
 		<img src = "resources/images/f2.jpg"/>
 		</br>
 		
-		<jsp:include page="loginCheck.jsp"/>	
+		<jsp:include page="loginCheck.jsp"/>
+		<jsp:include page="adminCheck.jsp"/>	
 		<p>			
-			<table class="table table-bordered"><TR>
-				<TH>NUM</TH>
-				<TD>${b.num }</TD>
+		<table class="table table-bordered">
+			<TR>
+				<TH>아이디</TH>
+				<TD>${u.id }</TD>
 				
-				<Th>NAME</TH>
-				<TD>${b.name }</TD>
+				<Th>비번</TH>
+				<TD>${u.pw }</TD>
 			</TR>
-			<TR>
-				<TH>DATE</TH>
-				<TD>${b.wdate }</TD>
-				
-				<TH>COUNT</TH>
-				<TD>${b.count }</TD>
-			</TR>
-			<TR>
-				<TH>TITLE</TH>
-				<TD COLSPAN=3>${b.title }</TD>
-			</TR>
-			<TR>
-				<TH>CONTENT</TH>
-				<TD COLSPAN=3>
-				<textarea readonly class="form-control" rows="5" id="comment" name="comment">			
-				${b.content }
-				</textarea>
-			</td>
-			</div>
-			</TR>
-		</TABLE>
-	 <a href="delete?num=${b.num }">글삭제</a>&nbsp;&nbsp;
-	 <a href="modify?num=${b.num }">글수정</a>&nbsp;&nbsp;
-	 <a href="list">글목록</a>	 
+		</table>
+	 <a href="delete?num=${u.id }">유저삭제</a>&nbsp;&nbsp;
+	 <a href="modify?num=${u.id }">정보수정</a>&nbsp;&nbsp;
+	 <a href="/mvc/list">유저목록</a>	 
 	  
 	<br><br>
 

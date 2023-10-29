@@ -29,8 +29,9 @@
 					name="id" value="${cookie.remember.value }">
 			</div>
 			<div class="form-group  text-left">
-				<label for="pass">Password:</label> <input type="password"
-					class="form-control" name="pass">
+				<label for="pass">Password:</label>
+				<input type="password"
+					class="form-control" name="pw">
 			</div>
 			
 			<div class="form-check">

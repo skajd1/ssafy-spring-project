@@ -28,26 +28,28 @@
 		<jsp:include page="adminCheck.jsp"/>
 		
 		<div id="result"></div>
-		
-		<table class="table table-striped">
-			<thead>
-				<tr>
-					<th>아이디</th>
-					<th>선택</th>
-				</tr>
-			</thead>
-			<tbody>
-				<c:forEach items="${list}" var="u">
+		<form action = "delete2" method = "post">
+			<table class="table table-striped">
+				<thead>
 					<tr>
-						<td><a href="list/${u.id}">${u.id }</a></td>
-						<td><input type = "checkbox" value = "${u.id }"></td>
-					</tr>				
-				</c:forEach>				
-			</tbody>
-		</table>
-		<br>
+						<th>아이디</th>
+						<th>선택</th>
+					</tr>
+				</thead>
+				<tbody>
+					<c:forEach items="${list}" var="u">
+						<tr>
+							<td><a href="list/${u.id}">${u.id }</a></td>
+							<td><input name="select" type = "checkbox" value = "${u.id }"></td>
+						</tr>				
+					</c:forEach>				
+				</tbody>
+			</table>
 		<a href="insert">회원 등록</a>
-		<a href="delete2"> 선택 삭제</a>
+		<button type = "submit"> 선택 삭제</button>
+			
+		</form>
+		<br>
 		<br>
 	</div>
 </body>

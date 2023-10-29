@@ -1,6 +1,7 @@
 package com.mvc.controller;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
@@ -99,6 +100,12 @@ public class UserController {
 	@GetMapping(value = "/delete")
 	public String delete(@RequestParam String id) {
 		service.delete(id);
+		return "redirect:/list";
+	}
+	@PostMapping(value = "/delete2")
+	public String delete2(@RequestParam String[] select) {
+		System.out.println(Arrays.toString(select));
+		service.delete2(select);
 		return "redirect:/list";
 	}
 	@GetMapping(value = "/modify")

@@ -12,4 +12,5 @@ public interface UserService {
 	public void modify(User u);
 	public void delete(String id);
 	public boolean check(User u);
+	public void delete2(String[] select);
 }

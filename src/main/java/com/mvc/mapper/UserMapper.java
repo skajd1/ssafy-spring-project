@@ -14,6 +14,6 @@ public interface UserMapper {
 	public User selectOne(String id);
 	public void insert(User u);
 	public void modify(User u);
-	public void delete(String id);
 	public User check(HashMap<String,String> map);
+	public void delete(String id);
 }

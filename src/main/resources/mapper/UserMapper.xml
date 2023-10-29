@@ -16,7 +16,11 @@
 	</select>
 	<insert id = "insert" parameterType = "map">
 		insert into user (id, pw) values (#{id},#{pw})
-	</insert>	
+	</insert>
+	<delete id = "delete" parameterType="String">
+		delete from user where id = #{id}
+	
+	</delete>
 	
 
 </mapper>

@@ -51,4 +51,12 @@ public class UserServiceImpl implements UserService {
 		mapper.delete(id);
 	}
 
+	@Override
+	public void delete2(String[] select) {
+		for(String id : select) {
+			mapper.delete(id);
+		}
+		
+	}
+
 }
